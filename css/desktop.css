@@ -1,0 +1,176 @@
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1158px;
+  }
+
+  /*------------------------------------------------------------------------hero-desktop---------------------------------------------------------*/
+  .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-image: var(--gra), url(../images/hero.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--gra), url(../images/hero@2x.jpg);
+    }
+  }
+  .btn-hero {
+    margin-top: 48px;
+  }
+  .address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  }
+
+  /*------------------------------------------------------------features-desktop-----------------------------------------------------------*/
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .features-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .features-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .features-item {
+    flex-basis: calc((100% - 24px) / 4); 
+  }
+  .features-icon {
+    display: block;
+    height: 64px;
+    width: 64px;
+  }
+  .features-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: 
+    var(--background-color-our-team);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  /*-------------------------------------------------------------what-are-desktop----------------------------------------------------*/
+  .what-are {
+  display: block;
+  }
+
+  /*-------------------------------------------------team-desktop---------------------------------------------------------*/
+  .team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  }
+  .team-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+  }
+  .team-item {
+    flex-basis: calc((100% - 24px) / 4); 
+  }
+
+  /*------------------------------------------------------------------------customers-desktop---------------------------------------------*/
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .coustomers-list {
+    display: flex;
+    gap: 24px;
+  }
+  .coustomers-items {
+    flex-basis: calc((100% - 5 * 24px) / 6);
+    height: 88px;
+  }
+
+  /*------------------------------------------footer-desktop-------------------------------------------------------------------------------*/
+  .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-div {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 0;
+  align-items: normal;
+}
+.footer-text-social {
+  margin-left: 120px;
+}
+.footer-subscribe-form {
+  margin-left: 80px;
+}
+.footer-form {
+  gap: 24px;
+}
+
+  /*-------------------------------------------------------portfolio-desktop--------------------------------------------------------------*/
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-btn {
+  cursor: pointer;
+  padding: 12px 24px;
+}
+.filter-btn:is(:hover, :focus) {
+  background-color: var(--link-hover);
+  color: var(--color-text-hero);
+  border-color: var(--link-hover);
+  box-shadow: 0px 2px 2px 0px 
+  rgba(0, 0, 0, 0.5);
+}
+.button-portfolio-list {
+  align-items: center;
+  justify-content: center;
+}
+.button-portfolio-item:not(:last-child) {
+  margin-right: 24px;
+}
+.flex-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin-top: 72px;
+}
+.flex-element {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.flex-element-text {
+  border-color: var(--color-text-footer);
+  border-style: solid;
+  border-width: 1px;
+  border-top-width: 0;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+
+/*----------------------------------------------------------------------------modal-window---------------------------------------------------------*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(1) rotate(0);
+  width: 408px;
+  min-height: 576px;
+  background-color: var(--background-modal-color);
+  border-radius: 4px;
+  padding: 72px 24px 24px 24px;
+  transition: transform var(--hover-effect);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0) rotate(-45deg);
+}
+}
